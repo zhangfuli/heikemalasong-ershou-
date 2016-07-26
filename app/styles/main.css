@@ -1,0 +1,315 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/*侧边栏*/
+.dr-menu {
+  width: 100%;
+  max-width: 200px;
+  min-width: 200px;
+  position: relative;
+  font-size: 1.3em;
+  line-height: 2.5;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 2em;
+}
+
+.dr-menu > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.dr-menu > div .dr-icon {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 150%;
+  line-height: 1.6;
+  padding: 0 10px;
+  transition: all 0.4s ease;
+}
+
+.dr-menu.dr-menu-open > div .dr-icon {
+  color: #60a773;
+  left: 100%;
+  transform: translateX(-80%);
+}
+
+.dr-menu > div .dr-icon:after {
+  content: "\e008";
+  position: absolute;
+  font-size: 50%;
+  line-height: 3.25;
+  left: -10%;
+  opacity: 0;
+}
+
+.dr-menu.dr-menu-open > div .dr-icon:after {
+  opacity: 1;
+}
+
+.dr-menu > div .dr-label {
+  padding-left: 3em;
+  position: relative;
+  display: block;
+  color: #4cae4c;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2.75;
+  transition: all 0.2s ease-in;
+}
+
+.dr-menu.dr-menu-open > div .dr-label {
+  transform: translateY(-90%);
+}
+
+.dr-menu ul {
+  padding: 0;
+  margin: 0 3em 0 0;
+  list-style: none;
+  opacity: 0;
+  position: relative;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0s linear 205ms;
+}
+
+.dr-menu.dr-menu-open ul {
+  opacity: 1;
+  z-index: 200;
+  pointer-events: auto;
+  transition: opacity 0s linear 0s;
+}
+
+.dr-menu ul li {
+      display: block;
+      margin: 0 0 5px 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+}
+
+ 
+.dr-menu.dr-menu-open ul li {
+      opacity: 1;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(2) {
+  transition-delay: 35ms;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(3) {
+  transition-delay: 70ms;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(4) {
+  transition-delay: 105ms;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(5) {
+  transition-delay: 140ms;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(6) {
+  transition-delay: 175ms;
+}
+
+.dr-menu.dr-menu-open ul li:nth-child(7) {
+  transition-delay: 205ms;
+}
+
+.dr-menu ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  color: #4cae4c;
+}
+
+.dr-menu ul li a:hover {
+  color: #60a773;
+}
+
+.dr-icon:before,
+.dr-icon:after {
+  position: relative;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dr-menu ul .dr-icon:before {
+  margin-right: 15px;
+}
+
+.dr-icon-bullhorn:before {
+  content: "\e000";
+}
+
+.dr-icon-camera:before {
+  content: "\e002";
+}
+
+.dr-icon-heart:before {
+  content: "\e003";
+}
+
+.dr-icon-settings:before {
+  content: "\e004";
+}
+
+.dr-icon-switch:before {
+  content: "\e005";
+}
+
+.dr-icon-download:before {
+  content: "\e006";
+}
+
+.dr-icon-user:before {
+  content: "\e001";
+}
+
+.dr-icon-menu:before {
+  content: "\e007";
+}
+
+.junxunson {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+/*homePage style*/
+.showSection {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  float: left;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.1px 20px gainsboro;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.showSection:hover {
+  box-shadow: 1px 1px 50px gainsboro;
+
+}
+
+.left-img{
+  float: left;
+  width: 40%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.right-div{
+  float: right;
+  width: 60%;
+}
