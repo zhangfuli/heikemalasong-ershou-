@@ -1,4 +1,28 @@
 <div ng-controller="AboutCtrl">
+  <img src="{{onegood.imgurl}}" alt="" width="100%">
+  <h2 class="h2" align="center">{{onegood.title}}</h2>
+  <div>
+    <h4 class="h4 text-danger floatleft">价格:{{onegood.price}}元</h4>
+    <h4 class="h4 floatright" >崭新度:{{onegood.degree}}</h4>
+  </div>
+  <br><br>
+  <h4 class="h4">卖家有话说:</h4>
+  <div class="wordwrap">
+    <p class="lead">{{onegood.detail}}</p>
+  </div><br>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      卖家基本信息
+    </div>
+    <div class="panel-body">
+      <div class="floatleft" style="width: 30%"><img src="{{onegood.ybhead}}" alt="" class="img-circle" width="100%"></div>
+      <div class="floatright" style="width: 70%">
+        <h3 class="h3" align="center">{{onegood.ybname}}</h3>
+        <h5 class="h5" align="center">QQ:{{onegood.qq}}</h5>
+        <h5 class="h5" align="center">Tel:{{onegood.telephone}}</h5>
+      </div>
+    </div>
+  </div>
 
 </div>
 

@@ -32,13 +32,18 @@ angular
         controller: 'AboutCtrl'
 
       })
+      .when('/admin', {
+        templateUrl: 'views/admin.html',
+        controller: 'AdminCtrl',
+        controllerAs: 'admin'
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
 
 
-//var http1="http://localhost:8080/second/getallpublish";//获取所有发布消息
-//var http2="http://localhost:8080/second/findone?id=*";//单个用户发布的信息
-//var http3="http://localhost:8080/second/getuserinfo";//用户的基本信息
+//var http1="http://heike.y1code.cn:8080/second/getallpublish";//获取所有发布消息
+//var http2="http://heike.y1code.cn:8080/second/publishfindone?id=";//单个用户发布的信息
+//var http3="http://heike.y1code.cn:8080/second/getuserinfo";//用户的基本信息
 

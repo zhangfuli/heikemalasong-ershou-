@@ -6,18 +6,6 @@
     <button class="col-xs-2 btn btn-primary">搜索</button>
   </div>
 </form>
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li>Action</li>
-    <li><a href="">Another action</a></li>
-    <li><a href="">Something else here</a></li>
-    <li><a href="">Separated link</a></li>
-  </ul>
-</div>
 <div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="AboutCtrl">
   <div class="showSection" ng-repeat="good in goods|filter:search" >
     <div class="left-img" style="background-image:url({{good.imgurl}})"></div>
@@ -26,7 +14,7 @@
       <h4 class="h4" align="center">崭新度:{{good.degree}}</h4>
       <h4 class="h4" align="center">分类:{{good.species}}</h4>
       <h4 class="h4 text-danger" align="center">价格:{{good.price}}</h4>
-     <p align="center"><button class="btn btn-success"><a href="/#/{{good.id}}">进去看看</a></button></p>
+     <p align="center"><button class="btn btn-success"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button></p>
     </div>
   </div>
 </div>
