@@ -19,7 +19,24 @@ angular.module('welcomePageApp')
     }
     $http.get("http://heike.y1code.cn:8080/second/getallpublish").then(function(respond){
       $scope.goods=respond.data;
+      //console.log(respond.data);
+      //console.log(respond.length);
+      //
+      //var jslength=0;     //局部变量
+      //for(var js2 in respond.data){
+      //  jslength++;
+      //}
+      //console.log(jslength);
     });
+    //for(var i=0;i<;i++){
+    //  var add;
+    //  if($scope.goods[i]){
+    //    add=$('')
+    //  }
+    //  else{
+    //    add=$('');
+    //  }
+    //}
 
   });
 

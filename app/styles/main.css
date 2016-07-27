@@ -316,7 +316,11 @@ body {
 .noneunderline{
   text-decoration: none;
 }
-
+.position{
+  position: absolute;
+  top:0;
+  right: 0;
+}
 /*************About****************/
 .wordwrap{
   width: 100%;
@@ -330,3 +334,4 @@ body {
 .floatright{
   float: right;
 }
+
