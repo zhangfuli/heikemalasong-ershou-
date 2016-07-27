@@ -1,0 +1,27 @@
+<form class="form-horizontal">
+  <div class="form-group form-group-mg">
+    <div class="col-xs-10">
+      <input class="form-control" type="text" placeholder="搜你想搜，只要我有" ng-model="search">
+    </div>
+    <button class="col-xs-2 btn btn-primary">搜索</button>
+  </div>
+</form>
+<div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="MyadminCtrl">
+  <div class="showSection" ng-repeat="good in mygood|filter:search" >
+    <div class="left-img" style="background-image:url({{good.imgurl}})"></div>
+    <div class="right-div">
+      <h2 class="h2" align="center">{{good.title}}</h2>
+      <h4 class="h4" align="center">崭新度:{{good.degree}}</h4>
+      <h4 class="h4" align="center">分类:{{good.species}}</h4>
+      <h4 class="h4 text-danger" align="center">价格:{{good.price}}</h4>
+      <p align="center" class="floatleft" style="margin-left: 10%"><button class="btn btn-success"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button></p>
+      <p align="center" class="floatright" style="margin-right: 10%"><button class="btn btn-danger" ng-click="dele(good.id)"><a href="" class="noneunderline">删除</a></button></p>
+    </div>
+  </div>
+</div>
+<div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="MyadminCtrl">
+  <div class="showSection wrap">
+    <div class="center"><a href="/#/admin/edit"><img src="images/add.png" alt="" width="30%"></a></div>
+  </div>
+</div>
+

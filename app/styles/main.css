@@ -335,3 +335,24 @@ body {
   float: right;
 }
 
+/*myadmin*/
+.wrap{
+  display: table;
+}
+.center{
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+.center img{
+  display: block;
+  margin: 0 auto;
+}
+
+/*edit*/
+.editwrap{
+  border: darkgray solid 1px;
+  padding:20%;
+  border-radius: 5px
+}
+

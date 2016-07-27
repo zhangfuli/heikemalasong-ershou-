@@ -37,6 +37,16 @@ angular
         controller: 'AdminCtrl',
         controllerAs: 'admin'
       })
+      .when('/admin/myadmin', {
+        templateUrl: 'views/myadmin.html',
+        controller: 'MyadminCtrl',
+        controllerAs: 'myadmin'
+      })
+      .when('/admin/edit', {
+        templateUrl: 'views/edit.html',
+        controller: 'EditCtrl',
+        controllerAs: 'edit'
+      })
       .otherwise({
         redirectTo: '/'
       });

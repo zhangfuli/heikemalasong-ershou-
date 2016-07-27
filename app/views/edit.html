@@ -1,0 +1,72 @@
+<div class="editwrap">
+    <form class="form-horizontal" name="form" method="POST" enctype="multipart/form-data" action="http://heike.y1code.cn:8080/second/publish">
+      <div class="form-group">
+        <label for="title" class="col-sm-3 control-label" >商品名：</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="title" placeholder="商品名"  name="title">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="title" class="col-sm-3 control-label" >价格：</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="price" placeholder="价格"  name="price">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="degree" class="col-sm-3 control-label" >崭新度:</label>
+        <div class="col-sm-9">
+          <input  class="form-control" id="degree" placeholder="崭新度" name="degree">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-sm-3 control-label" >手机号：</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="phone" placeholder="手机"  name="telephone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="detail" class="col-sm-3 control-label" >分类：</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="species" placeholder="Tip:学习、生活、娱乐" name="species">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="qq" class="col-sm-3 control-label" >QQ:</label>
+        <div class="col-sm-9">
+          <input  class="form-control" id="qq" placeholder="QQ" name="qq">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="detail" class="col-sm-3 control-label" >商品介绍：</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" rows="3" name="detail" id="detail"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="qq" class="col-sm-3 control-label" >请上传一张图片:</label>
+        <div class="col-sm-9">
+          <input type="file" name="file" />
+          <p class="text-danger">*必选</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <p class="text-center"><button type="submit" class="btn btn-success btn-lg">提交</button></p>
+        </div>
+      </div>
+    </form>
+</div>
+<form method="POST" enctype="multipart/form-data" action="http://heike.y1code.cn:8080/second/publish">
+  File to upload:<br>
+
+  <!--<input type="text"  name="title"/><br>-->
+  <!--<input type="text"  name="detail"/><br>-->
+  <!--<input type="text"  name="qq"/><br>-->
+  <!--<input type="text"  name="telephone"/><br>-->
+  <!--<input type="text"   name="price"/><br>-->
+  <input type="text"  name="species"/><br>
+  <!--<input type="text"  name="degree"/><br>-->
+
+  <input type="submit" value="publish" /><br>
+</form>
+
