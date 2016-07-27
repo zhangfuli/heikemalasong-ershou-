@@ -14,30 +14,13 @@ angular.module('welcomePageApp')
     if ($location.search()['verify_request']) {
       //alert($location.search()['verify_request']);
       $http.get('http://heike.y1code.cn:8080/second/auth/?vq=' + $location.search()['verify_request']);
-    } else {
+    }
+    else {
       window.location = 'https://openapi.yiban.cn/oauth/authorize?client_id=' + APPID + '&redirect_uri=' + CALLBACK + '&display=html';
     }
     $http.get("http://heike.y1code.cn:8080/second/getallpublish").then(function(respond){
       $scope.goods=respond.data;
-      //console.log(respond.data);
-      //console.log(respond.length);
-      //
-      //var jslength=0;     //局部变量
-      //for(var js2 in respond.data){
-      //  jslength++;
-      //}
-      //console.log(jslength);
     });
-    //for(var i=0;i<;i++){
-    //  var add;
-    //  if($scope.goods[i]){
-    //    add=$('')
-    //  }
-    //  else{
-    //    add=$('');
-    //  }
-    //}
-
   });
 
 

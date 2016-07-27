@@ -7,7 +7,15 @@
   </div>
 </form>
 <div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="MainCtrl">
-  <div class="showSection" ng-repeat="good in goods|filter:search" >
+  <div class="showSection" ng-repeat="good in goods|filter:search">
+    <div class="position">
+      <div ng-if="good.delete==true">
+        <span class="label label-default">已售</span>
+      </div>
+      <div ng-if="good.delete==false">
+        <span class="label label-success">未售</span>
+      </div>
+    </div>
     <div class="left-img" style="background-image:url({{good.imgurl}})"></div>
     <div class="right-div">
       <h2 class="h2" align="center">{{good.title}}</h2>

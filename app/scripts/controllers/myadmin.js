@@ -13,8 +13,9 @@ angular.module('welcomePageApp')
       if(respond.data.code==-1){
         alert("对不起，您没有登陆");
       }
-      else
+      else{
       $scope.mygood=respond.data;
+      }
     });
     $scope.dele=function(id){
       $http.get("http://heike.y1code.cn:8080/second/publish/delete?id="+id).then(function(respond){

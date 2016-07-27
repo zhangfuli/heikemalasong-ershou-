@@ -315,6 +315,11 @@ body {
 }
 .noneunderline{
   text-decoration: none;
+  color:white;
+}
+.noneunderline:hover{
+  text-decoration: none;
+  color:white;
 }
 .position{
   position: absolute;
@@ -333,6 +338,14 @@ body {
 }
 .floatright{
   float: right;
+}
+.say{
+  background-color:#dff0d8;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 /*myadmin*/
