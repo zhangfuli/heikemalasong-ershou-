@@ -9,13 +9,23 @@
 <div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="AdminCtrl">
   <div class="showSection" ng-repeat="good in goods|filter:search" >
     <div class="left-img" style="background-image:url({{good.imgurl}})"></div>
+    <!--<div class="right-div">-->
+      <!--<h2 class="h2" align="center">{{good.title}}</h2>-->
+      <!--<h4 class="h4" align="center">崭新度:{{good.degree}}</h4>-->
+      <!--<h4 class="h4" align="center">分类:{{good.species}}</h4>-->
+      <!--<h4 class="h4 text-danger" align="center">价格:{{good.price}}</h4>-->
+      <!--<p align="center" class="floatleft" style="margin-left: 10%"><button class="btn btn-success"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button></p>-->
+      <!--<p align="center" class="floatright" style="margin-right: 10%"><button class="btn btn-danger" ng-click="dele(good.id)"><a href="" class="noneunderline">删除</a></button></p>-->
+    <!--</div>-->
     <div class="right-div">
-      <h2 class="h2" align="center">{{good.title}}</h2>
-      <h4 class="h4" align="center">崭新度:{{good.degree}}</h4>
-      <h4 class="h4" align="center">分类:{{good.species}}</h4>
-      <h4 class="h4 text-danger" align="center">价格:{{good.price}}</h4>
-      <p align="center" class="floatleft" style="margin-left: 10%"><button class="btn btn-success"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button></p>
-      <p align="center" class="floatright" style="margin-right: 10%"><button class="btn btn-danger" ng-click="dele(good.id)"><a href="" class="noneunderline">删除</a></button></p>
+      <p><h4 class="title" align="center">{{good.title}}</h4>
+      <h6 class="degree" align="center">崭新度:{{good.degree}}</h6></p>
+      <h6 class="fenlei" align="center">分类:{{good.species}}</h6>
+      <p><h6 class="text-danger price" align="center">价格:{{good.price}}元</h6>
+      <p align="center" class="margin"><button class="btn btn-success btn-sm"><a href="/#/{{good.id}}" class="noneunderline">进去看看</a></button>
+        <button class="btn btn-danger btn-sm" ng-click="dele(good.id)"><a href="" class="noneunderline">删除</a></button>
+      </p></p>
+      </p>
     </div>
   </div>
 </div>
